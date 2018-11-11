@@ -21,7 +21,7 @@ h1 {
     padding: .4em;
     display: inline;
     font-size: 24px;
-    margin-left: 7em; 
+    margin-left: 3em; 
 
 }
 
@@ -45,9 +45,7 @@ ul#nav {
     display: inline;
     float: right;
     margin-top: .2em;
-    margin-right: .2em;
-   
-   
+    margin-right: 5em;
     
 }
 
@@ -88,8 +86,8 @@ a:active {
 
 .contentheader {
     /* margin: auto; */
-    margin-left: 11em;
-    margin-right: 12em; 
+    margin-left: 5em;
+    margin-right: 5em; 
     background-color: #ffffff;
     
     
@@ -133,7 +131,7 @@ a:active {
   }
 
   .column {
-    flex: 50%;
+    flex: none;
     max-width: 50%;
     padding: 0 4px;
   }
@@ -244,15 +242,29 @@ footer {
 }
 
 .column {
-    flex: 50%;
+    flex: 25%;
     max-width: 50%;
   }
     
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width:769px) and (max-width:980px) {
 
     .column {
-        flex: 25%;
-        max-width: 25%;
+        flex: none;
+        max-width: 50%;
       }
+
+      ul#nav {
+
+        margin-right: 12em;
+        
+    }
+
+    .contentheader {
+        /* margin: auto; */
+        margin-left: 5em;
+        margin-right: 5em; 
+        background-color: #ffffff;
+
+}
   
 }
